@@ -1,73 +1,30 @@
-<p align="center">
-  <a href="http://nestjs.com/" target="blank"><img src="https://nestjs.com/img/logo-small.svg" width="200" alt="Nest Logo" /></a>
-</p>
+🚀 Nest.js PSQL Drizzle ORM Configuration 🚀
 
-[circleci-image]: https://img.shields.io/circleci/build/github/nestjs/nest/master?token=abc123def456
-[circleci-url]: https://circleci.com/gh/nestjs/nest
+This repository contains a boilerplate setup for a Nest.js project integrated with PostgreSQL using Drizzle ORM. Drizzle ORM simplifies database operations and enhances the development experience with Nest.js.
 
-  <p align="center">A progressive <a href="http://nodejs.org" target="_blank">Node.js</a> framework for building efficient and scalable server-side applications.</p>
-    <p align="center">
-<a href="https://www.npmjs.com/~nestjscore" target="_blank"><img src="https://img.shields.io/npm/v/@nestjs/core.svg" alt="NPM Version" /></a>
-<a href="https://www.npmjs.com/~nestjscore" target="_blank"><img src="https://img.shields.io/npm/l/@nestjs/core.svg" alt="Package License" /></a>
-<a href="https://www.npmjs.com/~nestjscore" target="_blank"><img src="https://img.shields.io/npm/dm/@nestjs/common.svg" alt="NPM Downloads" /></a>
-<a href="https://circleci.com/gh/nestjs/nest" target="_blank"><img src="https://img.shields.io/circleci/build/github/nestjs/nest/master" alt="CircleCI" /></a>
-<a href="https://coveralls.io/github/nestjs/nest?branch=master" target="_blank"><img src="https://coveralls.io/repos/github/nestjs/nest/badge.svg?branch=master#9" alt="Coverage" /></a>
-<a href="https://discord.gg/G7Qnnhy" target="_blank"><img src="https://img.shields.io/badge/discord-online-brightgreen.svg" alt="Discord"/></a>
-<a href="https://opencollective.com/nest#backer" target="_blank"><img src="https://opencollective.com/nest/backers/badge.svg" alt="Backers on Open Collective" /></a>
-<a href="https://opencollective.com/nest#sponsor" target="_blank"><img src="https://opencollective.com/nest/sponsors/badge.svg" alt="Sponsors on Open Collective" /></a>
-  <a href="https://paypal.me/kamilmysliwiec" target="_blank"><img src="https://img.shields.io/badge/Donate-PayPal-ff3f59.svg"/></a>
-    <a href="https://opencollective.com/nest#sponsor"  target="_blank"><img src="https://img.shields.io/badge/Support%20us-Open%20Collective-41B883.svg" alt="Support us"></a>
-  <a href="https://twitter.com/nestframework" target="_blank"><img src="https://img.shields.io/twitter/follow/nestframework.svg?style=social&label=Follow"></a>
-</p>
-  <!--[![Backers on Open Collective](https://opencollective.com/nest/backers/badge.svg)](https://opencollective.com/nest#backer)
-  [![Sponsors on Open Collective](https://opencollective.com/nest/sponsors/badge.svg)](https://opencollective.com/nest#sponsor)-->
+## Features
 
-## Description
+✨ **Nest.js Framework**: A powerful Node.js framework for building scalable and maintainable server-side applications.
 
-[Nest](https://github.com/nestjs/nest) framework TypeScript starter repository.
+🐘 **PostgreSQL Database**: Utilize the robust PostgreSQL database for efficient data storage and retrieval.
 
-## Installation
+🔍 **Drizzle ORM Integration**: Drizzle ORM is integrated to streamline database interactions and provide an elegant solution for handling entities and relationships.
 
-```bash
-$ yarn install
-```
+⚙️ **Configuration Files**: Pre-configured setup for Nest.js and Drizzle ORM with sensible defaults. Start your project with minimal configuration hassle.
 
-## Running the app
+🛠️ **Extendable Architecture**: Easily extend and customize the project structure to meet your specific requirements.
 
-```bash
-# development
-$ yarn run start
+## Getting Started
 
-# watch mode
-$ yarn run start:dev
+1. Clone this repository: `git clone https://github.com/nainglinnphyo/nest-drizzle.git`
+2. Install dependencies: `npm install`
+3. Configure your PostgreSQL connection details in `.env`.
+4. To generate migration `npm run generate`.
+5. To run migration `npm run migrate`.
+6. Start the development server: `npm run start:dev`
 
-# production mode
-$ yarn run start:prod
-```
 
-## Test
+## Contribution Guidelines
 
-```bash
-# unit tests
-$ yarn run test
+Contributions are welcome! If you find any issues or have suggestions for improvements, feel free to open an issue or submit a pull request.
 
-# e2e tests
-$ yarn run test:e2e
-
-# test coverage
-$ yarn run test:cov
-```
-
-## Support
-
-Nest is an MIT-licensed open source project. It can grow thanks to the sponsors and support by the amazing backers. If you'd like to join them, please [read more here](https://docs.nestjs.com/support).
-
-## Stay in touch
-
-- Author - [Kamil Myśliwiec](https://kamilmysliwiec.com)
-- Website - [https://nestjs.com](https://nestjs.com/)
-- Twitter - [@nestframework](https://twitter.com/nestframework)
-
-## License
-
-Nest is [MIT licensed](LICENSE).
