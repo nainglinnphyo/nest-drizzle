@@ -27,4 +27,4 @@ This repository contains a boilerplate setup for a Nest.js project integrated wi
 
 Contributions are welcome! If you find any issues or have suggestions for improvements, feel free to open an issue or submit a pull request.
 
-This repository is referenced from [https://github.com/knaadh/nestjs-drizzle](https://github.com/knaadh/nestjs-drizzle).
+Drizzle config is referenced from [https://github.com/knaadh/nestjs-drizzle](https://github.com/knaadh/nestjs-drizzle).
