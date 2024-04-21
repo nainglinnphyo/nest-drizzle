@@ -23,8 +23,8 @@ This repository contains a boilerplate setup for a Nest.js project integrated wi
 5. To run migration `npm run migrate`.
 6. Start the development server: `npm run start:dev`
 
-
 ## Contribution Guidelines
 
 Contributions are welcome! If you find any issues or have suggestions for improvements, feel free to open an issue or submit a pull request.
 
+This repository is referenced at [https://github.com/knaadh/nestjs-drizzle](https://github.com/knaadh/nestjs-drizzle).
