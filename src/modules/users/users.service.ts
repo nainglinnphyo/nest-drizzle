@@ -10,8 +10,6 @@ export class UsersService {
   ) {}
 
   async findAll() {
-    return this.conn.query.users.findMany({
-      where;
-    });
+    return this.conn.query.users.findMany();
   }
 }

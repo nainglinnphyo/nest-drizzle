@@ -1,4 +1,4 @@
-import { Inject, Injectable } from '@nestjs/common';
+import { Inject, Injectable, Logger } from '@nestjs/common';
 import {
   PostgresJsDatabase,
   drizzle as drizzlePgJs,
@@ -20,9 +20,9 @@ export class DrizzleService implements IDrizzleService {
     @Inject(NEST_DRIZZLE_OPTIONS)
     private _NestDrizzleOptions: NestDrizzleOptions,
   ) {}
-  test(): Promise<any> {
-    throw new Error('Method not implemented.');
-  }
+
+  private logger = new Logger('DrizzleService');
+
   async migrate() {
     const client = postgres(this._NestDrizzleOptions.url, { max: 1 });
     await migratePgJs(
@@ -32,8 +32,16 @@ export class DrizzleService implements IDrizzleService {
   }
   async getDrizzle() {
     let client: postgres.Sql<Record<string, never>>;
+
     if (!this._drizzle) {
       client = postgres(this._NestDrizzleOptions.url);
+      try {
+        await client`SELECT 1`; // Sending a test query to check connection
+        this.logger.log('Database connected successfully');
+      } catch (error) {
+        this.logger.error('Database connection error', error);
+        throw error; // Propagate the error
+      }
       this._drizzle = drizzlePgJs(client, this._NestDrizzleOptions.options);
     }
     return this._drizzle;
